@@ -13,7 +13,7 @@
 
 // Password Screen
 "PasswordScreen.Title" = "Finish logging in";
-"PasswordScreen.WelcomeMessage" = "Welcome to Lanchita";
+"PasswordScreen.WelcomeMessage" = "Welcome to Athena";
 "PasswordScreen.PasswordField.Title" = "Password";
 
 // Registration Screen
@@ -22,10 +22,18 @@
 "RegistrationScreen.FullNameField.Hint" = "Add your name so friends can find you.";
 "RegistrationScreen.PasswordField.Hint" = "It should be something others can't guess.";
 
-// Login, Signup, Signout
+// Profile Screen
+"ProfileScreen.Title" = "Profile";
+"ProfileScreen.Description" = "Log in to start generating lecture notes.";
+"ProfileScreen.DontHaveAnAccountYet" = "Don't have an account?";
+"ProfileScreen.LogOut.Description" = "Are you sure you want to log out?";
+"ProfileScreen.DeleteAccount.Title" = "Delete Account";
+"ProfileScreen.DeleteAccount.Description" = "This is a permanent operation and you will not be able to access your account again.";
+
+// Login, Signup, Logout
 "SignupButton.Title" = "Sign Up";
 "LoginButton.Title" = "Log In";
-"SignOutButton.Title" = "Sign Out";
+"LogOutButton.Title" = "Log Out";
 "ContinueButton.Title" = "Continue";
 "CreateAccountButton.Title" = "Create Account";
 
@@ -40,14 +48,6 @@
 // Record Screen
 "RecordScreen.Title" = "Record";
 "RecordScreen.Description" = "Log in to start recording your next lecture.";
-
-// Profile Screen
-"ProfileScreen.Title" = "Profile";
-"ProfileScreen.Description" = "Log in to start planning your next trip.";
-"ProfileScreen.DontHaveAnAccountYet" = "Don't have an account?";
-"ProfileScreen.DeleteAccount.Title" = "Are you sure?";
-"ProfileScreen.DeleteAccount.Description" = "This is a permanent operation and you will not be able to access your account again.";
-"ProfileScreen.DeleteAccount" = "Delete Account";
 
 // OnboardingQuiz Screen
 "OnboardingQuiz.PreferredTravelDestination.Title" = "What is your preferred travel destination?";

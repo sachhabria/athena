@@ -35,6 +35,8 @@
 		9932E9BC2B798CF700CBBCD1 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9BB2B798CF700CBBCD1 /* StringExtensions.swift */; };
 		9932E9BE2B798D2100CBBCD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9BD2B798D2100CBBCD1 /* AppDelegate.swift */; };
 		9932E9C02B798EC700CBBCD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9932E9BF2B798EC700CBBCD1 /* GoogleService-Info.plist */; };
+		9932E9C42B79EE1B00CBBCD1 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9C32B79EE1B00CBBCD1 /* ProfileScreen.swift */; };
+		9932E9CB2B79F0D700CBBCD1 /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9CA2B79F0D700CBBCD1 /* RootScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		9932E9BB2B798CF700CBBCD1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		9932E9BD2B798D2100CBBCD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9932E9BF2B798EC700CBBCD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9932E9C32B79EE1B00CBBCD1 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		9932E9CA2B79F0D700CBBCD1 /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +160,10 @@
 		9932E9822B7987AD00CBBCD1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				9932E9A12B79895800CBBCD1 /* Common */,
 				9932E9832B7987B800CBBCD1 /* Auth */,
+				9932E9A12B79895800CBBCD1 /* Common */,
+				9932E9C12B79EDD400CBBCD1 /* Profile */,
+				9932E9C82B79F0B900CBBCD1 /* Root */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -264,6 +270,46 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9932E9C12B79EDD400CBBCD1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9C22B79EDF100CBBCD1 /* Screens */,
+				9932E9C52B79EE4900CBBCD1 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9932E9C22B79EDF100CBBCD1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9C32B79EE1B00CBBCD1 /* ProfileScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9932E9C52B79EE4900CBBCD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9932E9C82B79F0B900CBBCD1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9C92B79F0CE00CBBCD1 /* Screens */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9932E9C92B79F0CE00CBBCD1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9CA2B79F0D700CBBCD1 /* RootScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +405,7 @@
 				9932E9B22B798A8400CBBCD1 /* MainButtonStyle.swift in Sources */,
 				9932E99A2B79890000CBBCD1 /* HintView.swift in Sources */,
 				9932E99C2B79891400CBBCD1 /* InputView.swift in Sources */,
+				9932E9CB2B79F0D700CBBCD1 /* RootScreen.swift in Sources */,
 				9932E9A02B79894100CBBCD1 /* ValidationView.swift in Sources */,
 				9932E9BC2B798CF700CBBCD1 /* StringExtensions.swift in Sources */,
 				9932E9A52B79896C00CBBCD1 /* BackButtonView.swift in Sources */,
@@ -366,6 +413,7 @@
 				9932E9B02B798A5D00CBBCD1 /* NavButtonStyle.swift in Sources */,
 				9932E9892B79880D00CBBCD1 /* User.swift in Sources */,
 				9932E9B42B798ADF00CBBCD1 /* EmailScreen.swift in Sources */,
+				9932E9C42B79EE1B00CBBCD1 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@ struct PasswordScreen: View {
             
             // Logo and welcome text
             VStack {
-                Image(systemName: "sailboat")
+                Image(systemName: "pencil.and.list.clipboard")
                     .resizable()
                     .frame(width: 60, height: 60)
                     .foregroundColor(.indigo)
