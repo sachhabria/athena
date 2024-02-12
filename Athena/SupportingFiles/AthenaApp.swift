@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AthenaApp: App {
+    @StateObject var viewModel = AuthViewModel()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(viewModel)
         }
     }
 }
