@@ -12,6 +12,9 @@ struct RootScreen: View {
 
     var body: some View {
         TabView {
+            RecordScreen()
+                .tabItem { Label("Record", systemImage: "plus") }
+            
             ProfileScreen()
                 .environmentObject(viewModel)
                 .tabItem { Label("Profile", systemImage: "person.crop.circle") }

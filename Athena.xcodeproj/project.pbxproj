@@ -37,6 +37,9 @@
 		9932E9C02B798EC700CBBCD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9932E9BF2B798EC700CBBCD1 /* GoogleService-Info.plist */; };
 		9932E9C42B79EE1B00CBBCD1 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9C32B79EE1B00CBBCD1 /* ProfileScreen.swift */; };
 		9932E9CB2B79F0D700CBBCD1 /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9CA2B79F0D700CBBCD1 /* RootScreen.swift */; };
+		9932E9D12B79FF8700CBBCD1 /* RecordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9D02B79FF8700CBBCD1 /* RecordScreen.swift */; };
+		9932E9D32B79FFD500CBBCD1 /* RoundButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9D22B79FFD500CBBCD1 /* RoundButtonStyle.swift */; };
+		9932E9D52B7A002800CBBCD1 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932E9D42B7A002800CBBCD1 /* RecordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		9932E9BF2B798EC700CBBCD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9932E9C32B79EE1B00CBBCD1 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		9932E9CA2B79F0D700CBBCD1 /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		9932E9D02B79FF8700CBBCD1 /* RecordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordScreen.swift; sourceTree = "<group>"; };
+		9932E9D22B79FFD500CBBCD1 /* RoundButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButtonStyle.swift; sourceTree = "<group>"; };
+		9932E9D42B7A002800CBBCD1 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				9932E9832B7987B800CBBCD1 /* Auth */,
 				9932E9A12B79895800CBBCD1 /* Common */,
 				9932E9C12B79EDD400CBBCD1 /* Profile */,
+				9932E9CC2B79FF4000CBBCD1 /* Record */,
 				9932E9C82B79F0B900CBBCD1 /* Root */,
 			);
 			path = Features;
@@ -232,6 +239,7 @@
 			children = (
 				9932E9AF2B798A5D00CBBCD1 /* NavButtonStyle.swift */,
 				9932E9B12B798A8400CBBCD1 /* MainButtonStyle.swift */,
+				9932E9D22B79FFD500CBBCD1 /* RoundButtonStyle.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -308,6 +316,31 @@
 				9932E9CA2B79F0D700CBBCD1 /* RootScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9932E9CC2B79FF4000CBBCD1 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9CE2B79FF5A00CBBCD1 /* ViewModels */,
+				9932E9CD2B79FF5500CBBCD1 /* Screens */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		9932E9CD2B79FF5500CBBCD1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9D02B79FF8700CBBCD1 /* RecordScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9932E9CE2B79FF5A00CBBCD1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9932E9D42B7A002800CBBCD1 /* RecordViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +437,7 @@
 				9932E9A72B79897C00CBBCD1 /* CloseButtonView.swift in Sources */,
 				9932E9B22B798A8400CBBCD1 /* MainButtonStyle.swift in Sources */,
 				9932E99A2B79890000CBBCD1 /* HintView.swift in Sources */,
+				9932E9D52B7A002800CBBCD1 /* RecordViewModel.swift in Sources */,
 				9932E99C2B79891400CBBCD1 /* InputView.swift in Sources */,
 				9932E9CB2B79F0D700CBBCD1 /* RootScreen.swift in Sources */,
 				9932E9A02B79894100CBBCD1 /* ValidationView.swift in Sources */,
@@ -413,6 +447,8 @@
 				9932E9B02B798A5D00CBBCD1 /* NavButtonStyle.swift in Sources */,
 				9932E9892B79880D00CBBCD1 /* User.swift in Sources */,
 				9932E9B42B798ADF00CBBCD1 /* EmailScreen.swift in Sources */,
+				9932E9D12B79FF8700CBBCD1 /* RecordScreen.swift in Sources */,
+				9932E9D32B79FFD500CBBCD1 /* RoundButtonStyle.swift in Sources */,
 				9932E9C42B79EE1B00CBBCD1 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +600,7 @@
 				DEVELOPMENT_TEAM = K3QS9MR4ZU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Our app allows students with disabilities to record lectures which are transcribed into notes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -593,6 +630,7 @@
 				DEVELOPMENT_TEAM = K3QS9MR4ZU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Our app allows students with disabilities to record lectures which are transcribed into notes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

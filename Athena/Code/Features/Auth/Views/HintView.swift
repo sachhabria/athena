@@ -16,7 +16,3 @@ struct HintView: View {
             .foregroundStyle(Color(.systemGray))
     }
 }
-
-#Preview {
-    HintView(text: "EmailScreen.EmailField.Hint".localized)
-}
